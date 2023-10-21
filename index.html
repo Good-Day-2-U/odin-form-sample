@@ -25,7 +25,7 @@
         <p class="quote">You <em>know</em> you want to.</p>
         
         <div class="form-body">
-          <form action="" method="post"></form>
+          <form action="" method="post" onsubmit="return passCheck()" >
             <div class="inner-form">
               <p class="form-header">Let's do this!</p>
               <div class="fname">
@@ -46,15 +46,15 @@
               </div>
               <div class="password1">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" required>
+                <input id="pas1" type="password" name="password" required>
               </div>
               <div class="password2">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" required>
+                <input id="pas2" type="password" name="confirm-password" required autocomplete="new-password">
               </div>
             </div>
 
-            <button type="submit">Create Account</button>
+            <button onclick="passCheck(event)" type="submit">Create Account</button>
             <p class="foot">Already have an account? <a href="google.ca" id="login">Log in</a></p>
           </form>
         </div>

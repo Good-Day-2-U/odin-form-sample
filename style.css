@@ -24,6 +24,11 @@ body {
   font-weight: 530;
 }
 
+.image-credit,a {
+  color: white;
+  margin-bottom: 2rem;
+}
+
 .quote {
   margin-left: 3rem;
   font-weight: 500;
@@ -168,4 +173,16 @@ button {
 #login {
   color: green;
   text-decoration: none;
+}
+
+/* input {
+  border-radius: 5px;
+} */
+
+
+/* wrong pass */
+
+.wrong-pass {
+  border: 2px solid red;
+  border-radius: 5px;
 }
